@@ -53,7 +53,9 @@ def render():
                     ui.html('<i class="fab fa-x-twitter fa-1x"></i>')
 
             # Hero Text
-            with ui.element("div").classes("text-red font-bold text-center"):
+            with ui.element("div").classes(
+                "text-red font-bold text-center bg-black/20 h-full w-full flex flex-col items-center justify-center"
+            ):
                 ui.label("Akwaaba to").classes("font-lobster text-5xl")
                 ui.html("<h1>CHALE CIAO!</h1>").classes("font-poppins text-7xl")
                 ui.button("CHECK MENU").classes(
